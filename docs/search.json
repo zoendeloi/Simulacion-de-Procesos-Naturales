@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simulacion de Procesos Naturales",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "introduccion.html",
+    "href": "introduccion.html",
+    "title": "1  01 Simulacion",
+    "section": "",
+    "text": "2 Introducción"
+  },
+  {
+    "objectID": "introduccion.html#conceptos-generales",
+    "href": "introduccion.html#conceptos-generales",
+    "title": "1  Introducción",
+    "section": "1.1 Conceptos Generales",
+    "text": "1.1 Conceptos Generales\nBienvenido a los apuntes\nideas introductorias de modelación de fenomenos naturales\nobjetivos\n\naprender a modelar fenomenos naturales\nintroducir algunas tecnicas de modelado\nmostrar como estos modelos pueden ser simulados en un computador (in-silico lab, numerical experiments)\naprender sobre ciencia a travás de modelado\n\nque procesos nos itneresa modelar: físicos, astrofísicos, químicos, climáticos; ciencias mbientales, como ríos y volcanes; biologicos, crecimiento de teguido, patrones de células animales etc; ecosistemas, competencias y sinergia entre especies; finanzas y ciencias sociales, trafico, movimiento peatonal etc.\n\nQue es un modelo\nEs una simulacipon de la realidad, una representación. Un modelo es una abstracción simplificada de la realidad, que nos permite describirla mejor y entenderla con más claridad\nes una abstracción en la cual solo los ingredientes principales se retienen, de acuerdo a una pregutna acerca del sistema.\nes una representacipon de un fenomeno en un lenguaje matemático o de programación.\nuna descripcion basada en coputacion ofrece un nuevo lenguaje, una nueva metodologia para abordar problemas científicos, más alla de la vista que ofrecen los métdos numéricos tradicionales y atraves de campos en los cuales estos métdos son más difíciles de aplicar.\nla modelación y simulacion son una parte central de las ciencias computacionales, pues son una respuesta a cuestiones científicas a resolver. aca convergen física, matemáticas, ciencias de lacomputacion, biología, economía, etc."
+  },
+  {
+    "objectID": "introduccion.html#modelación-y-simulación",
+    "href": "introduccion.html#modelación-y-simulación",
+    "title": "1  Introducción",
+    "section": "1.2 Modelación y Simulación",
+    "text": "1.2 Modelación y Simulación\nun modelo sirve para describir, clasificar, pero mayormente para entender, predecir y controlar un fenómeno.\nentender un buen modelo no es simple. Varios modelos pueden ser necesarios para estudiar diferentes aspectos de un mismo fenómeno.\nTodo debiese ser hecho tan simple como sea posible pero no demasiado simple\n- A. Einstein\nun mismo sistema puede ser descrito en distintos niveles o escalas de realidad, diferentes métodos se aplican depeidneido de éstos.\n\natomos, moléculas, elementos de fluido, campos de presion, clima\ncelulas, tejidos, organos, seres vivos\npartes mecánicas, tráfico, personas etc.\n\ndebemos identificar los ignredeientes importantes para las interacciones de interes, y comunmente, es buena idea elegir un modelo a una escala un poco más inferior que la escala que queremos modelar para abordar una pregunta de investigacion.\nIlustremos esta idea de que para un mismo sistema podemos elegir distintas escalas de modelación con un problema de fluidos\nLa ecuación diferencial parcial para un flujo de un fluido es\n\\[\n\\partial_t u + (u\\cdot \\nabla)u = -\\frac{1}{\\rho}\\nabla p+ \\nu \\nabla^2 u\n\\]Podemos pasar de esta ecuación de derivadas parciales (que en terminos práctivos es muy dificil resolver) a un sistema discreto y obtener una solución numérica.\n\\[\n\\text{Fenómeno}\\rightarrow \\text{PDE} \\rightarrow \\text{discretización} \\rightarrow \\text{solución numérica}\n\\]\nSin embargo hay propuestas para abordar este fenómeno a nivel computacional: como sabemos que el fluido está hecho de moléculas, podríamos implemente tener un modelo con moléculas abstractas y una interacción abstracta entre esas moléculas.\n\\[\n\\text{Fenómeno} \\rightarrow \\text{modelo computacional}\n\\]\nLas moléculas chocan entre sí y debido a la colisión, rebotan en nuevas direcciones y se mueven en el espacio. Es una forma muy abstracta de entenderlo pero resulta ser una excelente forma de modelar. Hablaremos más de esto más adelante.\n\nalgunos ejemplos de metodos de modelación\n\nN-body systems, dinamica molecular\necuaciones matemáticas, ODE, PDE\nMétodos de montecarlo (equilibrio, dinámico y cinético)\nCellular automata y Lattice-Boltzmann\nsistemas multi-agente\neventos discretos\nredes complejas.\n\nUna vez que el modelo es especificado, lo programamos, lo corremos (muchas veces) y estudiamos los resultados). Es un universo virtual basado en computadores.\npara ello neesitamos entender programas computacionales, softwares de ingeniería, algoritmos, data-structures, hardware, optimizacion de código, data análisis.\n\nEl progrma debe ser verificado (si realmente se implementó el modelo)\n\n\n\nDebe ser validado (comparado con benchmark)\nTener suficiiente conocimiento del fenómeno a estudiar"
+  },
+  {
+    "objectID": "introduccion.html#modelando-tiempo-y-espacio",
+    "href": "introduccion.html#modelando-tiempo-y-espacio",
+    "title": "1  Introducción",
+    "section": "1.3 Modelando tiempo y Espacio",
+    "text": "1.3 Modelando tiempo y Espacio\nLos procesos naturales ocurren en el espacio y evolucionan en el tiempo (es decir, espacial extendido en sistemas dinámicos).\nPor ejemplo, la temperatura atmosférica es diferente de un lugar a otro y cambia en el tiempo; un auto en una carretera cambia posición en el tiempo. A veces sólo es interesante la evolución de una cantidad en el tiempo, independiente de los cambios de lugar (como es el caso de estudios financieros, por ejemplo). Otras veces un proceso es estacionario, por lo que nos importará solo cambios en el espacio.\nPara capturar las dimensiones temporales en un modelo, hay varias maneras:\n\nEl tiempo requiere valores reales. Sólo modelos matemáticos pueden tratar con esta aproximación ( como ecuaciones diferenciales).\nPodemos discretizar los valores en el computador. la duración del proceso es separada en pequeños intervalos de tiempo \\(\\Delta t\\) y vemos los cambios en el sistema en cada uno de esos intervalos \\(t_0 = 0, t_1=\\Delta t, \\cdots , t_n = n\\Delta t\\). De esta manera el tiempo es discretizado, pero el proceso completo está siendo seguido continuamente durante su ejecución.\nPor otro lado, podemos poner foco en algunos momentos interesantes del proceso. Por ejemplo, en una fila, sólo nos importará cuando un evento (una atención) ocurra. En tal caso, el tiempo \\(t\\) en el que ocurre un evento puede ser cualquier valor real. Esto sae llama aproximación de Simulación de eventos discretos (DES por sus siglas en ingles).\n\nLas dos formas de entender tiempo podemos verlas en la siguiente figura: \nAhora bien, para modelar el espacio, consideramos las aproximaciones Euleriana y Lagrangiana. Al igual que en el tiempo, tenemos varias opciones:\n\nTomar el punto de vista de un observador que se instala en un lugar fijo \\(\\vec{x}\\) y graba lo que observa. Por ejemplo, la presión atmosférica local \\(p(\\vec{x}, t)\\), o el número de autos que pasan cada minuto. Esto se llama aproximación Euleriana. El espacio puede ser contínuo (en modelos matemáticos) o discreto en forma de células."
+  }
+]
