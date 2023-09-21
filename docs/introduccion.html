@@ -137,6 +137,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#conceptos-generales" id="toc-conceptos-generales" class="nav-link active" data-scroll-target="#conceptos-generales"><span class="header-section-number">1.1</span> Conceptos Generales</a></li>
   <li><a href="#modelación-y-simulación" id="toc-modelación-y-simulación" class="nav-link" data-scroll-target="#modelación-y-simulación"><span class="header-section-number">1.2</span> Modelación y Simulación</a></li>
   <li><a href="#modelando-tiempo-y-espacio" id="toc-modelando-tiempo-y-espacio" class="nav-link" data-scroll-target="#modelando-tiempo-y-espacio"><span class="header-section-number">1.3</span> Modelando tiempo y Espacio</a></li>
+  <li><a href="#ejemplo-de-modelación-biomédica" id="toc-ejemplo-de-modelación-biomédica" class="nav-link" data-scroll-target="#ejemplo-de-modelación-biomédica"><span class="header-section-number">1.4</span> Ejemplo de modelación biomédica</a></li>
   </ul>
 </nav>
     </div>
@@ -242,7 +243,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Ahora bien, para modelar el espacio, consideramos las aproximaciones Euleriana y Lagrangiana. Al igual que en el tiempo, tenemos varias opciones:</p>
 <ul>
 <li>Tomar el punto de vista de un observador que se instala en un lugar fijo <span class="math inline">\(\vec{x}\)</span> y graba lo que observa. Por ejemplo, la presión atmosférica local <span class="math inline">\(p(\vec{x}, t)\)</span>, o el número de autos que pasan cada minuto. Esto se llama aproximación Euleriana. El espacio puede ser contínuo (en modelos matemáticos) o discreto en forma de células.</li>
+<li>La aproximación Lagrangiana, por otro lado, usa la posición de cada objeto (incluyendo al observador) como función del tiempo. Por ejemplo, emovimiento de la luna puede ser descrita por su propia trayectoria <span class="math inline">\(\vec{x}(t)\)</span>, donde es una variable continua, en un modelo de tráfico podemos obtener la posición de cada auto en el tiempo. Por tanto, el observador toma el punto de vista de los objetos en movimiento.</li>
 </ul>
+<p>En muchos sistemas no importa mucho las posiciones espaciales de los componentes en un sistema, sino cómo estos componentes interactúan entre ellos. Esto es el caso de sistemas sociales, donde (por ejemplo) dos personas pueden estar lejos y aún así comunicarse enter ellas.</p>
+<p>El agente en un modelo económico puede ser representado así como un grafo (o red compleja), en la que pares de agentes intercambian información, dinero, bienes, etc. Ahora bien, un grafo puede ser dinámico, con creación y destrucción de distintos links.</p>
+<p>[citar lgun modelo de propagación de opinion (for instance, Lino Velasquez, UNIGE]</p>
+<p>Para este caso de redes complejas,</p>
+<ul>
+<li><p>Es un campo de rápido desarrollo.</p></li>
+<li><p>Una topolo´gia de grafos impone una rica estructura espacial donde las restricciones son dinámicas.</p></li>
+<li><p>Muchas cuantificaciones caracterizan la topología del grafo y pueden ser relacionadas a propiedades globales del sistema: grados de distribución, coeficientes de clustering, mediciones de tendencia central, asortatividad, etc.</p></li>
+</ul>
+</section>
+<section id="ejemplo-de-modelación-biomédica" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="ejemplo-de-modelación-biomédica"><span class="header-section-number">1.4</span> Ejemplo de modelación biomédica</h2>
 
 
 </section>

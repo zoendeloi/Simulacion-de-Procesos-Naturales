@@ -124,3 +124,20 @@ Las dos formas de entender tiempo podemos verlas en la siguiente figura: ![](01_
 Ahora bien, para modelar el espacio, consideramos las aproximaciones Euleriana y Lagrangiana. Al igual que en el tiempo, tenemos varias opciones:
 
 -   Tomar el punto de vista de un observador que se instala en un lugar fijo $\vec{x}$ y graba lo que observa. Por ejemplo, la presión atmosférica local $p(\vec{x}, t)$, o el número de autos que pasan cada minuto. Esto se llama aproximación Euleriana. El espacio puede ser contínuo (en modelos matemáticos) o discreto en forma de células.
+-   La aproximación Lagrangiana, por otro lado, usa la posición de cada objeto (incluyendo al observador) como función del tiempo. Por ejemplo, emovimiento de la luna puede ser descrita por su propia trayectoria $\vec{x}(t)$, donde es una variable continua, en un modelo de tráfico podemos obtener la posición de cada auto en el tiempo. Por tanto, el observador toma el punto de vista de los objetos en movimiento.
+
+En muchos sistemas no importa mucho las posiciones espaciales de los componentes en un sistema, sino cómo estos componentes interactúan entre ellos. Esto es el caso de sistemas sociales, donde (por ejemplo) dos personas pueden estar lejos y aún así comunicarse enter ellas.
+
+El agente en un modelo económico puede ser representado así como un grafo (o red compleja), en la que pares de agentes intercambian información, dinero, bienes, etc. Ahora bien, un grafo puede ser dinámico, con creación y destrucción de distintos links.
+
+\[citar lgun modelo de propagación de opinion (for instance, Lino Velasquez, UNIGE\]
+
+Para este caso de redes complejas,
+
+-   Es un campo de rápido desarrollo.
+
+-   Una topolo´gia de grafos impone una rica estructura espacial donde las restricciones son dinámicas.
+
+-   Muchas cuantificaciones caracterizan la topología del grafo y pueden ser relacionadas a propiedades globales del sistema: grados de distribución, coeficientes de clustering, mediciones de tendencia central, asortatividad, etc.
+
+## Ejemplo de modelación biomédica
