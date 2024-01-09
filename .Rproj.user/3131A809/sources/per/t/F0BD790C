@@ -1,0 +1,31 @@
+{
+    "id": "F0BD790C",
+    "path": "~/GitHub/Simulacion-de-Procesos-Naturales/introduccion.qmd",
+    "project_path": "introduccion.qmd",
+    "type": "quarto_markdown",
+    "hash": "1180951889",
+    "contents": "",
+    "dirty": false,
+    "created": 1704467290805.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "7985:4601",
+        "cursorPosition": "142,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1704833832,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1704833832607,
+    "read_only": false,
+    "read_only_alternatives": []
+}
